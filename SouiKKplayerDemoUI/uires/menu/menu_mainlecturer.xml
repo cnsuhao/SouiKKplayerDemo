@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menuRoot skin="_skin.shadow"  itemHeight="30" iconPos="4,6" 
+textOffset="12" iconBarWidth="24" maxWidth="150" minWidth="150" 
+font="face:宋体,size:12"
+translucent="1" margin="5,3,5,3" colorBkgnd="#ff0000">
+      <menuItem id="50" >申请主讲</menuItem>
+	  <menuItem id="51" >放弃主讲</menuItem>
+	  <menuItem id="52" >文档共享</menuItem>
+	  <menuItem id="53" >屏幕共享</menuItem>
+	  <menuItem id="54" >媒体共享</menuItem>
+	  <menuItem id="55" >布局同步</menuItem>
+	  <menuItem id="56" >管理模式</menuItem>
+	  <menuItem id="57" >快速点名</menuItem>
+	  <menuItem id="58" >手动点名</menuItem>
+	  <menuItem id="59" >全场静音</menuItem>
+</menuRoot>

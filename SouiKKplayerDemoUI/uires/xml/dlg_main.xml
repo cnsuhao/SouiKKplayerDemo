@@ -1,0 +1,65 @@
+<SOUI name="mainWindow" title="界面" 
+width="1000" height="700"  margin="5,5,5,5"  resizable="1"
+appWnd="1" minsize="800,700"  smallIcon="ICON_LOGO32"  bigIcon="ICON_LOGO48"
+translucent="0"
+>
+	<root  colorBkgnd="#323232" >
+			<caption pos="1,1,-1,48" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#323232" show="1" font="adding:0" >
+			     
+					   <window pos="7,5,@30,@30"  skin="_skin.KKLOGO30" colorText="#FFFFFF" focusable="0" 
+					   tip="保千里会议系统"
+					   />
+					   <text pos="[8,10,]10,@25" width="200" name="TxtAVTitle" font="宋体" colorText="#C9C9C9"></text>
+					   <!--<button name="btn_AVTest"  pos="]-70,15,@60,@25" >测试</button>-->
+					 
+					   
+
+					   <imgbtn name="btn_EWhiteboard" skin="_skin.btn_Ewb" tip="电子白板" pos="]-46,12" focusable="0"/>
+					   <imgbtn name="btn_AvLayoutStandard" skin="_skin.btn_Standardscreen" tip="标准屏" pos="]-46,12" focusable="0"/>
+					   <imgbtn name="btn_AvLayout4" skin="_skin.btn_4screen" pos="]-46,12" tip="4分屏" focusable="0"/>
+					   <imgbtn name="btn_CameraVideo" skin="_skin.CameraVideo3" pos="]-46,12" tip="开启视频"  focusable="0" /> 
+					   <imgbtn name="btn_UsersDlg" skin="_skin.USERS3" pos="]-46,12"  tip="会议用户" animate="0" />
+					   <imgtip name="btn_CHART3"   tipskin="_skin.TipCHART3"   skin="_skin.TipCHART3" pos="]-46,12" tip="聊天" animate="0" />
+					   <imgbtn name="btn_UserInfoDlg" skin="_skin.USER3"  pos="]-46,12" tip="个人信息" animate="0" />
+					   <imgbtn name="btn_Setting"     skin="_skin.SETTING3"  pos="]-46,12" tip="系统" animate="0" />
+					   
+					   <imgbtn name="btn_min" skin="_skin.Win_Min" pos="-90,10" tip="最小化" animate="0" />
+					   <imgbtn name="btn_restore" skin="_skin.Win_Max2"  pos="-60,10" tip="恢复"  show="0" animate="0" />
+					   <imgbtn name="btn_max" skin="_skin.Win_Max"  pos="-60,10"  tip="最大化" animate="0" />
+					   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,10" tip="关闭" animate="0"/>
+			</caption>
+			
+			<!--<window pos="1,[0,-1,@1" colorBkgnd="#FFFFFF" />-->
+			<window name="WinWorkRegion" pos="1,[0,-1,]0" colorBkgnd="#343434" >
+			        <window name="WinWork_StandardLayout" pos="0,0,-0,-0">
+			             <window name="WinWorkCaVideo" pos="0,0,@240,-0" visible="0"  >
+							   <rtcvideo pos="1,[1,-1,%25"   name="S_CameraVideo1"  colorBkgnd="#424242"  bkgndBlend="1" centerlogo="_skin.VideoLogo" />
+							   <rtcvideo pos="1,[1,-1,%50"   name="S_CameraVideo2"  colorBkgnd="#424242"  bkgndBlend="1" centerlogo="_skin.VideoLogo" />
+							   <rtcvideo pos="1,[1,-1,%75"   name="S_CameraVideo3"  colorBkgnd="#424242"  bkgndBlend="1" centerlogo="_skin.VideoLogo" />
+							   <rtcvideo pos="1,[1,-1,%100"  name="S_CameraVideo4"  colorBkgnd="#424242"  bkgndBlend="0" centerlogo="_skin.VideoLogo" />
+					     </window>
+			             <videoplayer name="videoplayer" pos="[1,0,-0,-0" >
+					           <gifplayer name="Video_Gif_Loading" skin="_skin.Gif_Loading" pos="|-150,|-67,@328,@67" tip="" />
+					     </videoplayer>
+					</window>
+					<window name="WinWork_VideoLayout"  pos="0,0,-0,-0"  visible="0" >
+					      <include src="layout:XML_VideoLayout"/>
+					</window>
+			</window>
+			<window name="WinBottom" pos="1,-31,-1,@46" colorBkgnd="#1e1e1e" >
+			          <window pos="0,0,]-1,@30">
+					        <text pos="8,3,@80,@25" colorText="#ACACAC"  align="right">会议主题：</text>
+							<text pos="[8,3,@200,@25" colorText="#ACACAC" name="MeetingRoomName" align="left" />
+					        <text pos="[8,3,@150,@25" colorText="#ACACAC" name="MeetingNumberOfPeople" align="left" >会议人数：</text>
+							<text pos="[8,3,@150,@25" colorText="#ACACAC" name="MeetingVideoTip" align="left" >会议视频：正在连接</text>
+					  </window>
+					  <text pos="]-150,3,@150,@25" colorText="#ACACAC" name="MeetingNetTip" align="left" >网络正常</text>
+					 
+					  <bqlicon  pos="-120,8,@16,@16" name="btn_Microphone" skin="_skin.Microphone2" tip="禁止语音" />
+					  <microphonedb name="microphone" bkgndBlend="1" pos="-100,10,@120,@12"  value="100"></microphonedb>
+					  
+					  <imgbtn name="btn_max2" skin="_skin.FangDa" pos="-25,5"  animate="0" />
+			</window>
+			
+	</root>
+</SOUI>

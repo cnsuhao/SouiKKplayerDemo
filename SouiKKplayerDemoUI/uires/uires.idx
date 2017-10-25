@@ -1,0 +1,164 @@
+﻿<resource>  
+    <UIDEF>
+		<file name="XML_INIT" path="xml\init.xml"  />
+	</UIDEF>
+	<SMENUEX>
+            <file name="MenuVideoLayout" path="menu\menu_video_layout.xml"  />
+			<file name="MenuChairman" path="menu\menu_chairman.xml"  />
+			<file name="MenuMainlecturer" path="menu\menu_mainlecturer.xml"  />
+			<file name="MenuSyssetting" path="menu\menu_sys_setting.xml"  />
+			<file name="MenuAttendance" path="menu\menu_attendance.xml"  />
+			<file name="MenuUserTree" path="menu\menu_UserTree.xml"  />
+    </SMENUEX>
+	
+	<LAYOUT>
+		<file name="XML_MAINWND" path="xml\dlg_main.xml"  />
+		<file name="XML_LOGINWND" path="xml\dlg_login.xml"  />
+		<file name="XML_StandardLayout" path="xml\StandardLayout.xml"  />
+		<file name="XML_TrainLayout" path="xml\TrainLayout.xml"  />
+		<file name="XML_VideoLayout" path="xml\VideoLayout.xml"  />
+		<file name="XML_SelectRoom" path="xml\dlg_Select_Room.xml"  />
+		<file name="XML_Smiley" path="xml\dlg_Smiley.xml"  />
+		<file name="XML_UserInfo" path="xml\dlg_UserInfo.xml"  />
+		<file name="XML_EleWhiteBoard" path="xml\EleWhiteBoard.xml"  />
+		<file name="XML_VOLMUTEPOP" path="xml\dlg_Vol_Mute_Pop.xml"  />
+		
+		<file name="XML_CHARTWND" path="xml\dlg_chart.xml"  />
+        <file name="XML_USERS" path="xml\dlg_Users.xml"  />		
+		<file name="XML_ErrTipDlg" path="xml\ErrTipDlg.xml"  />	
+		<file name="XML_WaitDlg" path="xml\dlg_wait.xml"  />
+		<file name="XML_UserCamera" path="xml\dlg_UserCamera.xml"  />
+        <file name="XML_Setting" path="xml\dlg_Setting.xml" />
+		
+        <file name="XML_SelectedUserInfoDlg" path="xml\dlg_SelectedUserInfo.xml" />
+		<file name="SelectionDropDownWnd" path="xml\SelectionDropdownWnd.xml" />
+		
+		<!-- ole控件相关的布局文件 -->
+		<file name="FileOle" path="xml\richeditole\fileole.xml" />
+		<file name="SplitLineOle" path="xml\richeditole\splitlineole.xml" />
+		<file name="ImageOle" path="xml\richeditole\imageole.xml" />
+		<file name="FetchMoreOle" path="xml\richeditole\fetchmoreole.xml" />
+		<file name="RemainderOle" path="xml\richeditole\remainderole.xml" />
+		<file name="SingleNewsOle" path="xml\richeditole\singlenewsole.xml" />
+		<file name="MultiNewsOle" path="xml\richeditole\multinewsole.xml" />
+		
+	</LAYOUT>
+	<IMG>
+	</IMG>
+	<gif>
+	     <file name="ID_Gif_astonishment" path="Smiley\astonishment.gif" />
+		 <file name="ID_Gif_PROSS"        path="gif\pross.gif" />
+		 <file name="ID_Gif_Loading"      path="gif\loading.gif" />
+		 <file name="ID_Gif_Loading2"      path="gif\loading2.gif" />
+		 <file name="ID_Gif_Loading22"      path="gif\loading22.gif" />
+	</gif>
+	<ICON>
+		<file name="ICON_LOGO96"  path="ico\app96.ico"    />
+		<file name="ICON_LOGO48"  path="ico\app48.ico"    />
+		<file name="ICON_LOGO32"  path="ico\app32.ico"    />
+		<file name="ICON_LOGO16"  path="ico\app16.ico"    />
+	</ICON>
+	<png>
+	   <!--Logo区域-->
+	   
+	   <file name="ID_PNG_lOGINEDIT"  path="image\loginEdit.png" />
+	   
+	   <file name="ID_PNG_BTN4"   path="image\btn4.png" />
+	   
+	   <file name="ID_PNG_USER32" path="image\User32.png" />
+	   <file name="ID_PNG_USER48" path="image\User48.png" />
+	   <file name="ID_PNG_USER32_3" path="image\user32_3.png" />
+	   <file name="ID_PNG_KK_LOGO20" path="image\kklogo20.png" />
+	   <file name="ID_PNG_KK_LOGO32" path="image\kklogo.png"   />
+	   <file name="ID_PNG_LOGO30" path="image\logo30.png"   />
+	   <file name="ID_PNG_KK_LOGO48" path="image\kklogo48.png" />
+	   <file name="ID_PNG_NO_GROUP" path="image\no_group.png" />
+	   <file name="ID_PNG_LGBTN" path="image\lgbtn.png" />
+	   <file name="ID_PNG_DROPBTN24" path="image\dropbtn24.png" />
+	   <file name="ID_PNG_LGBK" path="image\lgbk.png" />
+	   <file name="ID_PNG_FullScreen" path="image\FullScreen.png" />
+	   <file name="ID_PNG_Smileyrect" path="image\Smileyrect.png" />
+	   <file name="ID_PNG_SHADOW" path="image\shadow.png" />
+	   <file name="ID_PNG_WIN_CLOSE" path="image\close.png" />
+	   <file name="ID_PNG_WIN_MAX" path="image\max.png" />
+	   <file name="ID_PNG_WIN_MIN" path="image\min.png" />
+	   <file name="ID_PNG_WIN_MAX_2" path="image\max_2.png" />
+	   <file name="ID_PNG_KEYBOARD" path="image\keyboard.png"  />
+       <file name="ID_PNG_LOGIN" path="image\login.png"/>
+	   <file name="ID_PNG_Smiley" path="image\smiley.png" />
+	   <file name="ID_PNG_A" path="image\A.png" />
+	   <file name="ID_PNG_IconInfo" path="image\icon-info.png" />
+	   <file name="ID_PNG_LineBk" path="image\lineBk.png" />
+	   <file name="ID_PNG_MainLecture" path="image\MainLecture.png" />
+	   <file name="ID_PNG_Charmain" path="image\Charmain.png" />
+	   <file name="ID_PNG_Presence" path="image\Presence.png" />
+	   <file name="ID_PNG_Setting18" path="image\setting18.png" />
+	   <file name="ID_PNG_View16" path="image\view16.png" />
+	   <file name="ID_PNG_Microphone" path="image\Microphone.png" />
+	   <file name="ID_PNG_Microphone2" path="image\Micro2.png" />
+	   <file name="ID_PNG_CameraVideo3" path="image\video3.png" />
+	   <file name="ID_PNG_TabIcon" path="image\TabIcon.png" />
+	   <file name="ID_PNG_WbTab" path="image\wwss.png" />
+	   
+	   <file name="ID_PNG_BK2" path="image\bk2.png" />
+	   <file name="ID_PNG_TAB_PAGE" path="image\tab_page.png" />
+	 
+	   <file name="ID_PNG_WWB" path="image\wwb.png" />
+	   <file name="ID_PNG_WBWAIT" path="image\wbwait.png" />
+	   <file name="ID_PNG_BoLine" path="image\BoLine.png" />
+	   <file name="ID_PNG_Role3" path="image\role3.png" />
+	   <file name="ID_PNG_Role4" path="image\role4.png" />
+	   <file name="ID_PNG_WIFI" path="image\wifi.png" />
+	   
+	   <file name="ID_PNG_LayOut" path="image\LayOut.png" />
+	   <file name="ID_PNG_FocusBox" path="image\focusbox.png" />
+	   <file name="ID_PNG_VideoLogo" path="image\VideoLogo.png" />
+	   <file name="ID_PNG_Add" path="image\add.png" />
+	   <file name="ID_PNG_Delete" path="image\delete.png" />
+	   <file name="ID_PNG_VideoBk" path="image\videobk.png" />
+	   
+	   <file name="ID_PNG_USERS" path="image\users.png" />
+	   <file name="ID_PNG_CHART3" path="image\chart3.png" />
+	   <file name="ID_PNG_TIPCHART3" path="image\TipChar3.png" />
+	   <file name="ID_PNG_USER3" path="image\User.png" />
+	   
+	   <file name="ID_PNG_SETTING3" path="image\Setting3.png" />
+	   <file name="ID_PNG_DOWN3" path="image\down.png" />
+	   
+	   <file name="ID_PNG_SYSMSG" path="image\SysMsg.png" />
+	   
+	   <file name="ID_PNG_AUDIO3" path="image\audio3.png" />
+	   <file name="ID_PNG_AU_MUTE3" path="image\au_mute.png" />
+	   <file name="ID_PNG_VOL_BLOCK" path="image\vol_block.png" />
+	   <file name="ID_PNG_VOL_BACK" path="image\volBack.png" />
+	   <file name="ID_PNG_FANG_DA" path="image\fangda.png" />
+	   <file name="ID_PNG_VOL_POS" path="image\volpos.png" />
+	   <file name="ID_PNG_VOL_MUTE_POP" path="image\volmuteTip.png" />
+	   <file name="ID_PNG_NO" path="image\No.png" />
+	   <file name="ID_PNG_ROOM3" path="image\Rooms3.png" />
+	   <file name="ID_PNG_TIP" path="image\Tip.png" />
+	   <file name="ID_PNG_ERRTIPBG" path="image\errtipbg.png" />
+	   
+	   <file name="ID_PNG_IM_BG_LEFT" path="image\imbgleft.png" />
+	   <file name="ID_PNG_IM_BG_RIGHT" path="image\imbgright.png" />
+	   
+	   <file name="ID_PNG_shurukuang" path="image\shurukuang.png" />
+	   <file name="ID_PNG_shurukuangBig" path="image\shurukuangda.png" />
+	   
+	   <file name="ID_PNG_4screen" path="image\4screen.png" />
+	   <file name="ID_PNG_Standardscreen" path="image\standardscreen.png" />
+	   <file name="ID_PNG_RightArrows" path="image\RightArrows.png" />
+	   <file name="ID_PNG_Ewb" path="image\ewb.png" />
+	   
+	   <file name="ID_PNG_VideoTiShi" path="image\VideoTiShi.png" />
+	   <file name="ID_PNG_Refresh" path="image\shuaixin.png" />
+	   <!--------------表情-------------->
+	   <!--惊讶--->
+	   <file name="ID_PNG_Smiley_Astonishment" path="Smiley\astonishment.png" />
+	   <!---撇嘴----->
+	   <file name="ID_PNG_Smiley_CurlonesLip" path="Smiley\CurlonesLip.png" />
+	</png>
+	<translator>
+          <file name="lang_cn" path="translation\lang_cn.xml"/>
+    </translator>
+</resource>

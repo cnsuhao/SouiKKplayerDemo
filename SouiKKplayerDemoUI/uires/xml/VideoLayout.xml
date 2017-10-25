@@ -1,0 +1,20 @@
+ <include>
+        <window pos="0,0,-0,]0" colorBkgnd="#343434" >
+				 <rtcvideo name="S_AVLayout4_1" bkgndBlend="0" pos="0,0,]1,-0"  colorBkgnd="#343434"  centerlogo="_skin.VideoLogo" />
+				 <!---分割线--->
+				 <window pos="|0,0,@1,-0" colorBkgnd="#424242" />
+				 <rtcvideo name="S_AVLayout4_2" bkgndBlend="0"  colorBkgnd="#343434"  centerlogo="_skin.VideoLogo"   pos="[1,0,]0,-0"   />	
+				
+		</window> 
+		
+		<!---分割线--->
+		<window pos="0,|0,-0,@1" colorBkgnd="#424242" />
+		
+		<window pos="0,[0,-0,-0" colorBkgnd="#343434" >
+				 <rtcvideo name="S_AVLayout4_3" bkgndBlend="0" pos="0,0,]1,-0"  colorBkgnd="#343434"  centerlogo="_skin.VideoLogo" />
+				 <!---分割线--->
+				 <window pos="|0,0,@1,-0" colorBkgnd="#424242" />
+				 <rtcvideo name="S_AVLayout4_4" bkgndBlend="0"  colorBkgnd="#343434"  centerlogo="_skin.VideoLogo"   pos="[1,0,]0,-0"   />	
+				
+		</window> 
+ </include>

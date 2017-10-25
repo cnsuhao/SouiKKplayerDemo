@@ -1,0 +1,30 @@
+﻿<resource>  
+    <UIDEF>
+		<file name="XML_INIT" path="xml\init.xml"  />
+	</UIDEF>
+	
+	<LAYOUT>
+		<file name="XML_MAINWND" path="xml\dlg_main.xml"  />
+		
+	</LAYOUT>
+	<IMG>
+	</IMG>
+
+	<png>
+		   <file name="ID_PNG_WIN_CLOSE" path="image\close.png" />
+		   <file name="ID_PNG_WIN_MAX" path="image\max.png" />
+		   <file name="ID_PNG_WIN_MIN" path="image\min.png" />
+		   <file name="ID_PNG_WIN_MAX_2" path="image\max_2.png" />
+		   
+		    <file name="ID_PNG_AUDIO3" path="image\audio3.png" />
+	        <file name="ID_PNG_AU_MUTE3" path="image\au_mute.png" />
+	        <file name="ID_PNG_VOL_BLOCK3" path="image\vol_block.png" />
+	        <file name="ID_PNG_VOL_BACK" path="image\volBack.png" />
+	   
+		   <file name="ID_PNG_OPENFILE" path="image\openfile.png" />
+		   <file name="ID_PNG_VideoLogo" path="image\VideoLogo.png" />
+	</png>
+	<translator>
+          <file name="lang_cn" path="translation\lang_cn.xml"/>
+    </translator>
+</resource>

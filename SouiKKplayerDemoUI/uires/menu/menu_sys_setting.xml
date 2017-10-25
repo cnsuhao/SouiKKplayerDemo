@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menuRoot skin="_skin.shadow"  itemHeight="30" iconPos="4,6" 
+textOffset="12" iconBarWidth="24" maxWidth="150" minWidth="130" 
+translucent="1" margin="5,3,5,3" colorBkgnd="#ff0000" font="face:宋体,size:12">
+      <menuItem id="1" >系统设置</menuItem>
+	  <menuItem id="2" >音频设置</menuItem>
+	  <menuItem id="3" >视频设置</menuItem>
+	  <menuItem id="4" >音视频设置</menuItem>
+	  <menuItem id="5" >个人信息</menuItem>
+	  <menuItem id="6" >切换会议室</menuItem>
+	  <menuItem id="7" >退出会议室</menuItem>
+</menuRoot>

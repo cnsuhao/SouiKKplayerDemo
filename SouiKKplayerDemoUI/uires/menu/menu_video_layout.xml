@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menuRoot skin="_skin.shadow"  itemHeight="30" iconPos="4,6" 
+textOffset="5" iconBarWidth="24" maxWidth="180" minWidth="170" 
+translucent="1" margin="5,3,5,3" colorBkgnd="#ff0000">
+      <menuItem hotKey="e" id="1" font="face:宋体">二分屏模式</menuItem>
+	  <menuItem id="2" font="face:宋体">画中画模式</menuItem>
+	  <menuItem id="3" check="1" font="face:宋体">四分屏模式</menuItem>
+</menuRoot>

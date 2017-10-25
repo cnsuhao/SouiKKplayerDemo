@@ -1,0 +1,36 @@
+<SOUI name="mainWindow" title="界面" 
+width="500" height="260"  margin="5,5,5,5"  resizable="1"
+appWnd="1" minsize="500,260"  
+translucent="0"
+>
+	<root  colorBkgnd="#323232" >
+			<caption pos="1,1,-1,48" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#323232" show="1" font="adding:0" >
+			     
+					   <text pos="[8,10,]10,@25" width="200" name="TxtAVTitle" font="宋体" colorText="#C9C9C9">
+					        kkplayersouiDemo
+					   </text>
+					   <imgbtn name="btn_min" skin="_skin.Win_Min" pos="-90,10" tip="最小化" animate="0" />
+					   <imgbtn name="btn_restore" skin="_skin.Win_Max2"  pos="-60,10" tip="恢复"  show="0" animate="0" />
+					   <imgbtn name="btn_max" skin="_skin.Win_Max"  pos="-60,10"  tip="最大化" animate="0" />
+					   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,10" tip="关闭" animate="0"/>
+			</caption>
+			
+			<!--<window pos="1,[0,-1,@1" colorBkgnd="#FFFFFF" />-->
+			<window name="WinWorkRegion" pos="1,[0,-1,]0" colorBkgnd="#343434" >
+						 <window pos="0,0,-0,]0" colorBkgnd="#343434" >
+							 <videoplayer name="S_AVLayout4_1"  bkgndBlend="1" pos="0,0,]1,-0"  colorBkgnd="#343434"  centerlogo="_skin.VideoLogo" >
+							   <imgbtn  name="btn_OpenFile1" pos="10,0,@18,@18" skin="_skin.OpenFile"  tip="打开文件" focusable="0" />
+							   <text pos="[8,0,@80,@25" width="200" name="TxtAVTitle" font="宋体" colorText="#C9C9C9">HWND</text>
+							 </videoplayer>
+							 <!---分割线--->
+							 <window pos="|0,0,@1,-0" colorBkgnd="#424242" />
+							 <videoplayer name="S_AVLayout4_2" dui="1" bkgndBlend="1"  colorBkgnd="#343434"  centerlogo="_skin.VideoLogo"   pos="[1,0,]0,-0"   >
+							     <imgbtn  name="btn_OpenFile2" pos="10,0,@18,@18" skin="_skin.OpenFile"  tip="打开文件" focusable="0" />
+								  <text pos="[8,0,@80,@25" width="200" name="TxtAVTitle" font="宋体" colorText="#C9C9C9">DUI</text>
+							 </videoplayer>	
+							
+						</window> 
+			</window>
+
+	</root>
+</SOUI>

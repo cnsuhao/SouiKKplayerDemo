@@ -1,0 +1,98 @@
+<SOUI name="mainWindow" title="界面" 
+width="1000" height="700"  margin="5,5,5,5"  resizable="1"
+appWnd="1" minsize="800,700"  bigIcon="ICON_LOGO:32"
+translucent="0"
+>
+	<root  colorBkgnd="#1883D7" >
+			<caption pos="1,1,-1,60" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#267CC2" show="1" font="adding:0" >
+                   <text pos="[8,10," width="150" name="TxtAVTitle" font="宋体" colorText="#999999">界面</text>
+				   
+				   
+				   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,10" tip="关闭" animate="0"/>
+                   <imgbtn name="btn_max" skin="_skin.Win_Max"  pos="-60,10"  tip="最大化" animate="0" />
+                   <imgbtn name="btn_restore" skin="_skin.Win_Max2"  pos="-60,10" tip="恢复"  show="0" animate="0" />
+                   <imgbtn name="btn_min" skin="_skin.Win_Min" pos="-90,10" tip="最小化" animate="0" />
+				   
+				   <imgbtn name="btn_CHART3" skin="_skin.CHART3" pos="-120,15" tip="聊天" animate="0" />
+				   <imgbtn name="btn_UsersDlg" skin="_skin.USERS3" pos="-150,15" tip="会议用户" animate="0" />
+			</caption>
+			
+			<!--<window name="WinTopBar" pos="1,40,-1,@30" colorBkgnd="#4A8CDE"  >
+			       <button name="TopBar_Btn_Setting" skin="_skin.sys.tab.page" pos="2,0,@80,-1" font="size:12" focusable="0">
+				              <text skin="_skin.Setting" pos="18,8,@16,@16" focusable="0" />
+							  <text pos="[5,5,-1,-1">系统</text>
+				   </button>
+				   <button name="TopBar_Btn_Charmain" skin="_skin.sys.tab.page" pos="[0,0,@80,-1" font="size:12" focusable="0">
+				              <text skin="_skin.Charmain" pos="20,8,@14,@16" focusable="0" />
+							  <text pos="[5,5,-1,-1">主席</text>
+				   </button>
+				   <button name="TopBar_Btn_MainLecture" skin="_skin.sys.tab.page" pos="[0,0,@80,-1" font="size:12" focusable="0">
+				              <text skin="_skin.MainLecture" pos="20,8,@14,@16" focusable="0" />
+							  <text pos="[5,5,-1,-1">主讲</text>
+				   </button>
+				   <button name="TopBar_Btn_Presence" skin="_skin.sys.tab.page" pos="[0,0,@80,-1" font="size:12" focusable="0">
+				              <text skin="_skin.Presence" pos="20,8,@16,@16" focusable="0" />
+							  <text pos="[5,5,-1,-1">出席</text>
+				   </button>
+				   <button name="TopBar_Btn_View" skin="_skin.sys.tab.page" pos="[0,0,@80,-1" font="size:12" focusable="0">
+				              <text skin="_skin.View16" pos="20,8,@16,@16" focusable="0" />
+							  <text pos="[5,5,-1,-1">视图</text>
+				   </button>
+				   <button name="TopBar_Btn_Help" skin="_skin.sys.tab.page" pos="[0,0,@80,-1" font="size:12" focusable="0">
+				              <text skin="_skin.IconInfo" pos="20,8,@16,@16" focusable="0" />
+							  <text pos="[5,5,-1,-1">帮助</text>
+				   </button>
+				   <button name="TopBar_Btn_FeedbackProblem" pos="[0,0,@60,-1" font="size:12" focusable="0">反馈问题</button>
+			</window>-->
+			<window name="WinTopTab" pos="1,[1,-1,@35" skin="_skin.LineBk">
+			        <button name="TopTab_Btn_ApplyForTalk"  skin="_skin.sys.tab.page"  pos="0,5,@100,-1" font="size:12" focusable="0">
+					          <text skin="_skin.Microphone" pos="15,10,@9,@16" />
+                              <text skin="_skin.Add" name="ApplyForTalk_AddIco" pos="18,-16,@14,@14"/>
+							  <text skin="_skin.Delete" name="ApplyForTalk_DelIco" visible="0" pos="18,-16,@14,@14"/>
+							  <text pos="[2,5,-1,-1"  name="ApplyForTalk_Text" >申请发言</text>
+					</button>
+				    <button name="TopTab_Btn_ApplyForMainLecture" skin="_skin.sys.tab.page"  pos="[0,5,@100,-1" font="size:12" focusable="0">
+					          <text skin="_skin.MainLecture" pos="15,8,@14,@16" focusable="0" />
+							  <text skin="_skin.Add" name="ApplyForMainLecture_AddIco" pos="20,-16,@14,@14"/>
+							  <text skin="_skin.Delete" name="ApplyForMainLecture_DelIco" visible="0" pos="20,-16,@14,@14"/>
+							  <text pos="[2,5,-1,-1" name="ApplyForMainLecture_Text" >申请主讲</text>
+					</button>
+					<hr mode="vertical" colorLine="#FFFFFF" pos="[5,5,@1,-1" />
+					<tabctrl name="Top_Main_Tab" pos="[5,5,@270,-0" show="1" curSel="0" focusable="0" animateSteps="10" 
+					tabHeight="30" tabWidth="80" iconSkin="_skin.Tab_Icon"
+					icon-y="0" text-x="25" text-y="10"
+					colorTextHover="#ff0000" fontHover="italic:0,size:12" font="size:12" >
+                           <page title="标准布局"></page>
+						   <page title="培训布局"></page>
+						   <page title="视频布局"></page>
+				    </tabctrl>
+					<hr mode="vertical" colorLine="#FFFFFF" pos="[5,5,@1,-1" />
+					
+					<button name="TopTab_Btn_FullScreen" skin="_skin.sys.tab.page"  pos="[5,5,@100,-1" font="size:12" focusable="0">
+					       <text skin="_skin.FullScreen" pos="15,8,@15,@15" />
+						   <text pos="[3,5,-1,-1">全屏显示</text>
+					</button>
+					<hr mode="vertical" colorLine="#FFFFFF" pos="[5,5,@1,-1" />
+				    <button name="TopTab_Btn_AudioTest" pos="[5,5,@60,-1" font="size:12" focusable="0">音频测试</button>
+					<hr mode="vertical" colorLine="#FFFFFF" pos="[5,5,@1,-1" />
+					<button name="TopTab_Btn_TellCall" pos="[5,5,@60,-1" font="size:12" focusable="0">电话邀请</button>
+			</window>
+			<window pos="1,[0,-1,@1" colorBkgnd="#FFFFFF" />
+			<window name="WinWorkRegion" pos="1,[1,-1,]0" colorBkgnd="#FFFFFF" >
+			        <window name="WinWork_StandardLayout" pos="0,0,-0,-0">
+					     <include src="layout:XML_StandardLayout" />
+					</window>
+					<window name="WinWork_TrainLayout"  pos="0,0,-0,-0" visible="0" >
+					      <include src="layout:XML_TrainLayout"/>
+					</window>
+					<window name="WinWork_VideoLayout"  pos="0,0,-0,-0"  visible="0" >
+					      <include src="layout:XML_VideoLayout"/>
+					</window>
+			</window>
+			
+			<window name="WinBottom" pos="1,-30,-1,@30" colorBkgnd="#569AEE" >
+			       <bqlicon skin="_skin.WIFI" focusable="0" tip="网络" pos="-25,2,@25,@25" />
+			</window>
+			
+	</root>
+</SOUI>

@@ -1,0 +1,10 @@
+<SOUI name="DlgWait" title="等待" 
+width="328" height="67"  margin="5,5,5,5"  resizable="0"
+appWnd="0" minsize="328,67"  bigIcon="ICON_LOGO:32"
+translucent="1"
+>	 <root  skin="_skin.shadow" >
+			<window name="WinWebRes" pos="0,0,-0,-0">
+			        <gifplayer name="Gif_Loading" skin="_skin.Gif_Loading" pos="0,0,@328,@67" tip="请稍后" />
+			</window>
+	</root>
+</SOUI>

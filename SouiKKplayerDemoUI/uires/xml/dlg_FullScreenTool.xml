@@ -1,0 +1,11 @@
+<SOUI name="FloatFullBar" title="全屏窗口工具栏" 
+width="200" height="30" 
+resizable="0" appWnd="0" minsize="200,30" 
+translucent="1">
+	<root  colorBkgnd="#000000" >
+			<window pos="1,1,-1,-1" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#4A8CDE" show="1" font="adding:0" >
+				   <button name="TopTab_Btn_FullScreen" pos="[5,0,@60,-1" font="size:12" focusable="0">聊天窗口</button>
+				   <button name="Btn_FullScreen" pos="[5,0,@60,-1" font="size:12" focusable="0">退出全屏</button>
+			</window>
+	</root>
+</SOUI>

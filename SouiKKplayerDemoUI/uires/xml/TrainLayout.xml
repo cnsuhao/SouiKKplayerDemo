@@ -1,0 +1,18 @@
+<include>
+ <splitrow name="Win_TrainLayOut_split_row" pos="0,0,-1,-0">
+     <pane priority="1">
+	        <!--sepSize:·Ö¸î·ûºÅ-->
+            <splitcol name="Win_TrainLayOut_split_col" pos="0,0,-0,-0" sepSize="0">
+                   <pane idealSize="220" colorBkgnd="#D5EBFF" name="Win_TrainLayOut_ColPaneLeft" margin="0,0,0,0" 
+				   minSize="200" priority="1" clipClient="1" pos="0,0,@200,-1">
+			                  <bqlvideo pos="1,0,-0,@150"  name="SLayOut_CameraVideo1"  colorBkgnd="#B2D2EC"  bkgndBlend="0" centerlogo="_skin.VideoLogo" />   
+                   </pane>
+                   <pane name="Win_TrainLayOut_ColPaneRight"  margin="0,0,0,0"
+                   pos="[0,0,-1,-0"
+				   minSize="400" priority="0" clipClient="1">
+				            
+                   </pane>
+           </splitcol>
+	 </pane>
+  </splitrow>
+</include>

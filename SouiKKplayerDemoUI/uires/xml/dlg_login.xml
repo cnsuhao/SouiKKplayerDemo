@@ -1,0 +1,75 @@
+<SOUI name="DlgLogin" title="会议登陆" 
+width="440" height="350"  margin="5,5,5,5"  resizable="0"
+appWnd="1" minsize="440,350" smallIcon="ICON_LOGO32"  bigIcon="ICON_LOGO48"
+translucent="1">	
+<root  skin="_skin.shadow" >
+		<window pos="5,3,-5,-5" colorBkgnd="#FFFFFF" >
+			<caption pos="0,0,-0,@180" name="AV_Tittle" margin="0,0,0,0" skin="_skin.lgBk" show="1" font="adding:0" >
+                   <text pos="8,8" width="150" name="TxtAVTitle" font="宋体" colorText="#FFFFFF">会议登录</text>
+				   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,5" tip="关闭" animate="0"/>
+                   <imgbtn name="btn_min" skin="_skin.Win_Min" pos="-60,5" tip="最小化" animate="0" />
+				   <imgbtn name="btn_Setting" skin="_skin.Down3" pos="-90,5" tip="设置" animate="0" />
+			</caption>
+			<window name="WinWebRes" pos="0,[0,-0,-0"  >
+			<tabctrl name="loginTab" pos="0,0,-0,-0" show="1" curSel="0" focusable="0" animateSteps="10" 
+			tabPos="0" tabInterSize="0" colorBkgnd="#EBF2F9"
+			tabHeight="0" tabWidth="60" icon-x="10"  text-y="10" colorTextHover="#ff0000" fontHover="size:12" font="size:12" >
+								 <page title="">
+										  <window name="LoginBock" pos="45,12,-1,-1"  >
+												 <window pos="80,0,@202,@62" skin="_skin.lOGINEDIT"  colorBkgnd="#EFEFED">
+														<edit  pos="5,1,-19,@31" inset="10,0,0,0" name="edit_MeetingNumber"  font="adding:1" 
+														margin="0" mouseRelay="1" number="1" cueText="请输入会议号" maxBuf="6" />
+												
+														<edit  pos="5,[0,-19,@31" inset="10,0,0,0" name="edit_UserName"  font="adding:1" 
+														margin="0" mouseRelay="1"  maxBuf="12" cueText="请输入名称"/>
+														<imgbtn pos="-22,35" skin="_skin.btn_keyboard" name="Btn_SoftKeyboard" mouseRelay="1" tip="软键盘"/>
+												 </window>
+												
+												 <imgbtn  pos="80,[15,@200,@35" name="btn_login" skin="_skin.LGBTN" colorText="#FFFFFF" />
+												
+										  </window>
+				                  </page>
+				                  <page>
+										  <window name="SettingBock" pos="45,12,-1,-1"  >
+												 <window pos="5,0,-0,@30">
+														<text  pos="0,5,@100,@20" align="right" colorText="#000000">服务器地址：</text>
+														<comboview name="cbx_IP" pos="[0,0,@200,@30" dropDown="0"   dropHeight="200" animateTime="0"
+															  btnSkin="_skin.DropBtn24"  inset="10,0,0,0" colorBkgnd="#ffffff"
+															  class="cls_edit" curSel="0" id_text="3">
+																	<liststyle class="cls_edit" colorBkgnd="#ffffff"><!--列表下拉框-->
+																		 <template itemHeight="30" colorHover="#cccccc" colorSelected="#0000ff">
+																			  <text name="StrAccount" pos="10,9"></text>
+																			  <imgbtn id="3" name="btn_del"  skin="_skin.Delete" pos="-24,|-8,@16,@16" tip="删除"/>
+																		</template>
+																	</liststyle>
+																	<editstyle font="adding:1" vcenter="1" colorText="#000000" align="left" colorBkgnd="#FFFFFF" cueText="域名或IP地址"/>
+														</comboview>
+												 </window>
+												 <window pos="5,[10,-0,@30">
+														<text  pos="0,5,@100,@20" align="right" colorText="#000000">端口：</text>
+														<richedit class="cls_edit" name="IPPort"   inset="5,5,0,0" colorBkgnd="#ffffff" font="adding:1" 
+                                                        multiLines="0"
+														number="1" pos="[0,0,@200,@30" />
+												 </window>
+												 <window pos="5,[15,-0,@30">
+														<button  pos="]-100,0,@80,@25" name="btn_Ok" focusable="0" colorText="#000000">确定</button>
+														<button  pos="]-120,0,@80,@25" name="btn_Cancell" focusable="0" colorText="#000000">取消</button>
+												 </window>
+										  </window>
+				                 </page>
+								 <page>
+										  <window name="ProssBock" pos="50,0,-1,-1"  >
+												 <gifplayer name="Gif_pross" skin="_skin.Gif_Pross" pos="|-130,|-40,@200,@40" tip="正在登录" />
+										  </window>
+										  <text name="WIN_Rm_Info" visible="0"  align="left" pos="5,]-25,-1,@25" multiLines="1" colorText="#000000">
+										  当前会议号
+										  </text>
+				                 </page>
+		     </tabctrl>
+			</window>
+			<window name="Win_ErrTip" visible="0" pos="1,[-35,-1,-1" colorBkgnd="#F9F3D3" >
+                        <window pos="5,5,@21,@22" skin="_skin.Tip" /> <text name="WIN_Err_Tip_Text"  align="left" pos="[5,1,-0,@30" multiLines="1" colorText="#FF0000"></text>
+            </window>
+		</window>
+	</root>
+</SOUI>

@@ -1,0 +1,11 @@
+﻿<SOUI name="MutePop" title="聊天界面" 
+width="100" height="34"  margin="0,0,0,0"  resizable="0"
+appWnd="0" minsize="100,43"
+translucent="1"
+>
+<root >
+			<window pos="0,0,-0,34" name="AV_Tittle" margin="0,0,0,0" skin="_skin.Vol_Mute_Pop">
+			    <imgbtn name="btn_close" skin="_skin.NO"  pos="-30,0,@30,@34" tip="关闭" animate="0"/>
+			</window>
+</root>
+</SOUI>

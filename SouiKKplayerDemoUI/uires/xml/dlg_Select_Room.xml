@@ -1,0 +1,25 @@
+<SOUI name="DlgSelectRoom" title="选择会议室" 
+width="500" height="350"  margin="5,5,5,5"  resizable="0"
+appWnd="0" minsize="500,350"  bigIcon="ICON_LOGO:32"
+translucent="1"
+>	 <root  skin="_skin.shadow" >
+			<caption  pos="5,3,-5,40" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#267CC2" show="1" font="adding:0" >
+			       <window pos="7,10,@20,@20"  skin="_skin.KKLOGO20" name="KKLogoBtn" colorText="#FFFFFF" focusable="0" />
+                   <text pos="[8,10,@100,@20" name="TxtAVTitle" font="宋体" colorText="#FFFFFF">正在加入会议</text>
+				   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,0" tip="关闭" animate="0"/>
+			</caption>
+			<window name="WinWebRes" pos="5,40,-5,-5" colorBkgnd="#FFFFFF" >
+			         
+					 <window  pos="|-150,70,@328,@67" >
+					         <window pos="0,0,-1,@25">
+					                 <text pos="8,3,@80,@20" name="TxtAVTitle" font="宋体" colorText="#000000">会议主题:</text>
+								     <window pos="[2,2,@200,@25" class="cls_edit" >
+								           <edit  pos="0,0,-0,-0" inset="10,0,0,0" name="edit_Topic"  font="adding:1"
+									       margin="0" mouseRelay="1"  maxBuf="12" />
+								     </window>
+							 </window>
+					 </window>
+			         <gifplayer name="Gif_Loading" skin="_skin.Gif_Loading2" pos="|-20,|-40,@48,@48" tip="正在等待同意" />
+			</window>
+	</root>
+</SOUI>

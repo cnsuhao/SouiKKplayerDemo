@@ -1,0 +1,11 @@
+<SOUI name="ErrTipDlg" title="´íÎóÌáÊ¾" 
+width="160" height="40"  margin="0,0,0,0"  resizable="0"
+appWnd="0" minsize="160,40"
+translucent="1"
+>
+<root  skin="_skin.ErrTipBg">
+			<window pos="3,7,-3,-3" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#FFFFFF" >
+			    <window name="tipTxt" pos="0,5,-0,-0" align="center" />
+			</window>
+</root>
+</SOUI>

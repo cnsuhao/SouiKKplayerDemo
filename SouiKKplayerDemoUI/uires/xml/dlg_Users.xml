@@ -1,0 +1,35 @@
+﻿<SOUI name="UsersWnd" title="会议成员列表" 
+width="500" height="600"  margin="5,5,5,5"  resizable="0"
+appWnd="0" minsize="500,600"  smallIcon="ICON_LOGO32"  bigIcon="ICON_LOGO48"
+translucent="1"
+>
+	 <root  skin="_skin.shadow" >
+	        <!--#267CC2-->
+			<caption pos="5,3,-5,32" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#202020" show="1" font="adding:0" >
+			       <window pos="7,5,@20,@20"  skin="_skin.KKLOGO20" name="KKLogoBtn" focusable="0" />
+                   <text pos="[8,5,@150,@20" name="TxtAVTitle" font="宋体" colorText="#ACACAC">会议成员</text>
+				   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,4" tip="关闭" animate="0"/>
+			</caption>
+								
+			<window  pos="5,[0,-5,-5" colorBkgnd="#323232" name="Win_UserListChatRegion">
+											<treeview pos="1,0,-1,-1" name="Win_StaLayOut_ColPaneLeftTab_UserTreeView" 
+											itemHeight="-1" colorItemBkgnd="#FFFFFF"  colorItemSelBkgnd="#FFFFFF" indent="30">
+												 <template height="40" hoverskin="_skin.FocusBox" selectedskin="_skin.FocusBox" trackMouseEvent="1">
+														 <window pos="0,0,-0,-0"  >
+															 <toggle pos="[0,|-5,@17,@17"  offset="0,-0.5" name="tgl_switch" skin="_skin.sys.tree.toggle"
+															 tip="展开"/>
+															 <window pos="[5,2,-1,@32" name="Btn_One" colorText="#ACACAC" align="left"  focusable="0" />
+															 <window pos="0,0,-1,@40" name="Leafwin" visible="0" >
+																		<window  pos="5,5,@32,@32" >
+																				 <bqlicon skin="_skin.USER32_3" name="Tree_Win_RoleIco" focusable="0" pos="0,0,-0,-0" />
+																		</window>
+																		<text name="tv_txt_user_name" colorText="#ACACAC" tip="显示名称" pos="[10,15,@100,@16" />
+																		<bqlicon name="Tree_Win_VideoIco" skin="_skin.CameraVideo3" pos="[5,12"  focusable="0" /> 
+															 </window>
+														 </window>
+												 </template>
+											</treeview>
+											
+			</window>
+    </root>
+</SOUI>

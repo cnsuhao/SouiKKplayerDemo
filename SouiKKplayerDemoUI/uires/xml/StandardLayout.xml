@@ -1,0 +1,134 @@
+﻿ <include>
+ <splitrow name="Win_StandardLayOut_split_row" pos="0,0,-1,-0">
+     <pane priority="1">
+	        <!--sepSize:分割符号-->
+            <splitcol name="Win_StandardLayOut_ssplit_col" pos="0,0,-0,-0" sepSize="0">
+                   <pane idealSize="220" colorBkgnd="#D5EBFF" name="Win_StandardLayOut_ColPaneLeft" margin="0,0,0,0" 
+				   minSize="200" priority="1" clipClient="1" pos="0,0,@200,-1">
+				           <!-------用户与聊天信息列表----------->
+				           <window pos="0,0,-0,-0" name="Win_UserListChatRegion">
+								 <tabctrl name="Win_StaLayOut_ColPaneLeftTab" pos="0,[0,-1,]0" show="1" curSel="0" focusable="0" animateSteps="0" 
+								 skin="_skin.VideoBk2"  tabSkin="_skin.Tab_Page" tabPos="5"
+								 tabHeight="28" tabWidth="60" icon-x="10" colorTextHover="#ff0000" fontHover="size:12" font="size:12" >
+								   <page title="用户">
+								   <!--------colorHover="#cccccc"  colorItem SelBkgnd=#cccccc colorSelected="#0000ff"c olorSelected="#D5EBFF" ------------->
+											<treeview pos="1,0,-1,-1" name="Win_StaLayOut_ColPaneLeftTab_UserTreeView" 
+											itemHeight="-1" colorItemBkgnd="#FFFFFF"  colorItemSelBkgnd="#FFFFFF" indent="30">
+												 <template height="30" colorNormal="#D5EBFF" hoverskin="_skin.FocusBox" selectedskin="_skin.FocusBox" trackMouseEvent="1">
+														 <window pos="0,0,-0,-0" skin="_skin.BottomLineX" >
+															 <toggle pos="[0,|0,@17,@17"  offset="0,-0.5" name="tgl_switch" skin="_skin.sys.tree.toggle"
+															 tip="展开"/>
+															 <button pos="[0,5,-1,@25" name="Btn_One"  focusable="0">btn</button>
+															 <window pos="0,5,-1,@25" name="Leafwin" skin="_skin.BottomLineX" visible="0" >
+																		<!-----出席------->
+																		<window  pos="2,2,@16,@19" >
+																				 <bqlicon skin="_skin.Role4" name="Tree_Win_RoleIco" focusable="0" pos="0,0,-0,-0" />
+																		</window>
+																		<text name="tv_txt_user_name" tip="显示名称" pos="[1,2,@100,@16" />
+																		
+																		<window  pos="[0,2,@16,@20" > 
+																				 <bqlicon skin="_skin.Microphone2" name="TBtnMicrophone" 
+																				 focusable="0" tip="开启麦克风" pos="0,0,-0,-0" />
+																		</window>
+																		<window  pos="[5,5,@16,@17" > 
+																				 <bqlicon skin="_skin.CameraVideo2" name="TBtnCameraVideo" focusable="0" tip="开启摄像头" pos="0,0,-0,-0" />
+																		</window>
+																		<!---标识区----->
+																		<window  pos="[3,0,@23,@20" visible="0"> 
+																				 <bqlicon skin="_skin.WbWait" focusable="0" tip="授予主讲" pos="0,2,@19,@17" /> 
+																				 <bqlicon skin="_skin.WWB" focusable="0" tip="主讲" pos="0,2,@18,@17" />
+																		</window>
+															 </window>
+														 </window>
+												 </template>
+											</treeview>
+								   </page>
+								   <page title="文档"></page>
+								 </tabctrl>
+								 
+								 <tabctrl name="Win_StaLayOut_ColPaneLeftTabBottom_Msg" pos="0,]-230,-0,-0" show="1" curSel="0" focusable="0" animateSteps="0" 
+								 tabPos="5" tabInterSize="0" tabSkin="_skin.Tab_Page"
+								 tabHeight="27" tabWidth="60" icon-x="10"  text-y="10"
+								 colorBkgnd="#B2D2EC" colorTextHover="#ff0000" fontHover="size:12" font="size:12" >
+								   <page title="系统">
+										   <window pos="3,0,-2,-1">
+													 <chatedit name="SyS_edit_talk" pos="0,0,-0,-0" bkgndBlend="1" class="cls_edit" 
+													 colorBkgnd="#FFFFFF" enableDragdrop="0" multiLines="1" vscrollBar="1" wordWrap="1" 
+													 readOnly="1"											 
+													 autoVscroll="1" hscrollBar="0" wantReturn="1" maxBuf="640000"/>
+										   </window>
+								   </page>
+								   <page title="聊天">
+											 <!---colorBkgnd="#000000"----> <!---->
+											 <window pos="3,0,-2,-1" name="edit_sms_input" >
+													 <window  colorBkgnd="#FFFFFF"   pos="[-1,0,-0,@100"  name="charWinlist"  >
+														  <!--------接受区域---------->
+														  <chatedit name="recv_edit_talk" pos="0,0,-0,-0" bkgndBlend="1" class="cls_edit" 
+														  enableDragdrop="0" multiLines="1" vscrollBar="1" wordWrap="1"  autoVscroll="1"
+														  hscrollBar="0" wantReturn="1" readOnly="1"
+														  maxBuf="6400000"/>
+													 </window>
+													 <window pos="0,[3,-0,@25"   name="charWinTool"  >
+														  <combobox name="cbx_UserList" pos="0,0,@130,@24"  focusable="0" colorBkgnd="#FFFFFF"
+														  dropDown="1" dropHeight="100" class="cls_edit" dotted="0" animateTime="200" curSel="1">
+																		  <liststyle class="cls_edit"  itemHeight="25" 
+																		  colorText="#000000" colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088"/>
+																		  <editstyle inset="5,0,5,0" colorText="#000000" align="left" colorBkgnd="#FFFFFF"/>
+																		  <items>
+																		  </items>
+														  </combobox>
+														  <imgbtn name="BtnTalkA" skin="_skin.btn_A"  pos="[5,0,@24,@24" tip="字体选择工具栏" focusable="0" />
+														  <imgbtn name="BtnTalkSmiley" skin="_skin.btn_Smiley" pos="[2,0,@24,@24" tip="表情工具栏" font="size:12" focusable="0" />
+													 </window>
+													 <!-------编辑区域---------->
+													 <chatedit  class="cls_edit" pos="0,[0,-0,]-2"  name="send_edit_talk"
+													 multilines="1"  enableDragdrop="1" multiLines="1" vscrollBar="1"   colorBkgnd="#FFFFFF"  
+													 wordWrap="1"  autoVscroll="1" hscrollBar="0" wantReturn="1" maxBuf="100"
+													 cueText="@string/cue_sms" notifyChange="1">
+															 <window pos="-10,-10" offset="-1,-1">
+																  <text pos="0,0" name="txt_wordcount" colorText="@color/gray" colorTextDisable="@color/red">0</text>
+																  <text pos="[0,0" colorText="@color/gray">/100</text>
+															 </window>
+													 </chatedit>
+													<button name="btn_SendTalk" pos="-60,]-25,@60,@22" font="size:12" focusable="0">发送</button>
+											 </window>
+								   </page>
+								 </tabctrl>
+						   </window>
+				   </pane>
+                   <pane name="Win_StandardLayOut_ColPaneRight"  margin="0,0,0,0"
+                   pos="[0,0,-1,-0"
+				   minSize="400" priority="0" clipClient="1">
+				            <window pos="1,0,]-1,-1" name="Win_WhiteBordRegion" >
+										 <tabctrl name="xxx" pos="0,[1,-0,]0" show="1" curSel="0" focusable="0" animateSteps="0" 
+								         tabHeight="28" tabWidth="100" icon-x="5" colorTextHover="#ff0000"  skin="_skin.VideoBk2" 
+										 text-x="33" text-y="10" tabSkin="_skin.Tab_Page" tabPos="5"
+										 fontHover="size:12" font="size:12" iconSkin="_skin.Tab_WbIcon">
+								                     <page title="电子白板">
+													           <include src="layout:XML_EleWhiteBoard"/>
+													 </page>
+													 <page title="屏幕共享">  </page>
+													 <page title="媒体共享">  </page>
+													 <page title="电子投票">  </page>
+                                         </tabctrl>										   
+							</window> 
+                            <window pos="%75,0,%100,-0" maxWidth="300" name="StandWin_LeafVideo"  colorBkgnd="#B2D2EC" >
+							              <window pos="2,0,-1,%25" skin="_skin.VideoBk"  >
+										      <bqlvideo pos="1,0,-1,-2"  name="SLayOut_CameraVideo1"  colorBkgnd="#B2D2EC"  bkgndBlend="0" centerlogo="_skin.VideoLogo" />
+										  </window>
+										  <window pos="2,%25,-1,%50" skin="_skin.VideoBk" >
+										      <bqlvideo name="SLayOut_CameraVideo2" bkgndBlend="0"  colorBkgnd="#B2D2EC"  centerlogo="_skin.VideoLogo"   pos="1,0,-1,-1"   />	
+										  </window>
+										  <window pos="2,%50,-1,%75" skin="_skin.VideoBk" >
+										      <bqlvideo name="SLayOut_CameraVideo3" bkgndBlend="0"  colorBkgnd="#B2D2EC"  centerlogo="_skin.VideoLogo"   pos="1,0,-1,-1"   />	
+										  </window>
+										  <window pos="2,%75,-1,%100" skin="_skin.VideoBk" >
+										      <bqlvideo name="SLayOut_CameraVideo4" bkgndBlend="0"  colorBkgnd="#B2D2EC"  centerlogo="_skin.VideoLogo"   pos="1,0,-1,-1"   />	
+										  </window>
+                                          										
+							</window>   
+                 </pane>
+           </splitcol>
+	 </pane>
+</splitrow>
+</include>

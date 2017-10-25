@@ -1,0 +1,72 @@
+﻿<SOUI name="UserChart" title="聊天界面" 
+width="680" height="511"  margin="0,0,0,0"  resizable="0"
+appWnd="0" minsize="680,511"  smallIcon="ICON_LOGO32"  bigIcon="ICON_LOGO48"
+translucent="0"
+>
+<root skin="_skin.shadow" >
+    <!-- <window pos="5,3,-5,-5" skin="_skin.lgBk" >-->
+	<window pos="0,0,-0,-0" colorBkgnd="#202020" >
+			<caption pos="1,1,-1,31" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#202020" show="1" font="adding:0" >
+			       <window pos="7,5,@20,@20"  skin="_skin.KKLOGO20" name="KKLogoBtn" colorText="#FFFFFF" focusable="0" />
+                   <text pos="[8,6,]0,@25"  name="TxtAVTitle" 
+				   colorText="#ACACAC"> 会议室聊天</text>
+				   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-28,4" tip="关闭" animate="0"/>
+			</caption>
+			<window pos="1,[0,-1,-1" colorBkgnd="#323232">
+						 <window pos="0,0,-0,@1" colorBkgnd="#323232" />
+						 <window pos="0,1,]-0,-0"  name="edit_sms_input" >
+																 <window  pos="10,0,-0,]0"  name="charWinlist">
+																	<imrichedit name="recv_edit_talk" bkgndBlend="1"  pos="0,0,-0,-0" bkgndBlend="1"  enableDragdrop="1" 
+																	  readOnly="1" autoSel="0" multiLines="1" autoWordSel="0" vscrollBar="1" wordWrap="1"  
+																	  inset="5,5,0,0" colorBkgnd="#323232" colorText="#ACACAC"
+																	  autoVscroll="0" hscrollBar="0" wantReturn="1" scrollSpeed="60"/> <!-- -->
+																 </window>
+																 <window pos="0,]-10,-0,@1" colorBkgnd="#202020" />
+																 <window pos="0,]-35,-0,@25"   name="charWinTool"  >
+																	  <!--<imgbtn name="BtnTalkA" skin="_skin.btn_A"  pos="5,0,@24,@24" tip="字体选择工具栏" focusable="0" />-->
+																	  <!--<imgbtn name="BtnTalkSmiley" skin="_skin.btn_Smiley" pos="2,0,@24,@24" tip="表情工具栏" font="size:12" focusable="0" />
+																	  -->
+																	  <text pos="5,0,@60,@25">字体大小：</text>
+																		 <combobox name="cbx_font" pos="[0,3,@40,@20" colorBkgnd="#FFFFFF" dropDown="1" focusable="0"
+																		 dropHeight="100" inset="1,0,0,0"  class="cls_edit" dotted="0" animateTime="200" curSel="0">
+																					<liststyle class="cls_edit" itemHeight="20" colorText="#000000" 
+																					colorSelText="#FFFFFF" colorItemBkgnd="#FFFFFF" colorItemSelBkgnd="#000088"/>
+																					<editstyle inset="5,0,5,0"   colorText="#000000" align="left" colorBkgnd="#FFFFFF"/>
+																					<items>
+																						  <item text="8" icon="1" data="8"/>
+																						  <item text="9" icon="1" data="9"/>
+																						  <item text="10" icon="1" data="10"/>
+																						  <item text="11" icon="1" data="11"/>
+																						  <item text="12" icon="1" data="12"/>
+																						  <item text="13" icon="2" data="13"/>
+																						  <item text="14" icon="2" data="14"/>
+																					</items>
+																	   </combobox>
+																	   <imgbtn pos="[8,0" skin="_skin.btn_keyboard" name="Btn_SoftKeyboard" mouseRelay="1" tip="软键盘"/>
+																 </window>
+																 
+																
+																 <imrichedit pos="10,]-90,-10,@80"  name="send_edit_talk" colorText="#ACACAC"
+																 multilines="1" inset="5,5,0,0" font="font:4"  enableDragdrop="1" multiLines="1" vscrollBar="1"
+																 wordWrap="1"  autoVscroll="1" hscrollBar="0" wantReturn="1" maxBuf="100"
+																 >
+																 </imrichedit>
+																 <button name="btn_SendTalk" pos="-90,]-35,@80,@30" font="size:12" 
+																 skin="_skin.Btn4"  colorText="#FFFFFF" 
+																 focusable="0">发送</button>
+						</window>
+						<window pos="-200,0,@200,-1" colorBkgnd="#202020" >
+											        <window pos="0,3,-0,@24" colorBkgnd="#1A1A1A">
+											              <text tip="会议成员" pos="10,0,-1,-1"  colorText="#ACACAC" >参会成员</text>
+													</window>
+											        <listview pos="1,[0,-1,-1" colorBkgnd="#323232" name="lv_list_User" dividerSize="1"   wantTab="1">
+															 <template itemHeight="36" colorHover="#404040" colorSelected="#454545" trackMouseEvent="1">
+																	  <bqlicon skin="_skin.USER32_3" name="Win_RoleIco"  pos="4,2,@32,@32" focusable="0"/>
+																	  <text name="tv_txt_user_name" colorText="#ACACAC"  tip="显示名称" pos="[10,8,@100,@20" />
+															</template>
+													</listview>
+						</window >
+             </window >
+     </window>
+</root>
+</SOUI>

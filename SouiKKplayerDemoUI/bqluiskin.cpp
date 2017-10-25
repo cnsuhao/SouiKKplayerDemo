@@ -1,0 +1,4 @@
+// bqluiskin.cpp : 定义 DLL 应用程序的导出函数。
+//
+#include "stdafx.h"
+//uiresbuilder.exe -iuires/uires.idx -puires -rres/res2.rc2

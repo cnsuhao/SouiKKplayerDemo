@@ -1,0 +1,21 @@
+﻿<SOUI name="摄像头" title="会议成员列表" 
+width="300" height="200"  margin="5,5,5,5"  resizable="0"
+appWnd="1" minsize="300,200"
+translucent="0"
+>
+	 <root colorBkgnd="#1883D7">
+	        <!--#267CC2-->
+			<caption pos="0,0,-0,28" name="AV_Tittle" margin="0,0,0,0"  colorBkgnd="#5493FF" show="1" font="adding:0" >
+			       <window pos="7,4,@20,@20"  skin="_skin.KKLOGO20" name="KKLogoBtn" colorText="#FFFFFF" focusable="0" />
+                   <text pos="[8,4,@100,@20" name="TxtAVTitle" font="宋体" colorText="#FFFFFF">会议成员</text>
+				   <button name="btn_PushStream"  pos="[-0,5,@60,@25" >测试</button>
+				   
+				   <imgbtn name="btn_min" skin="_skin.Win_Min" pos="]-30,0,@30,@30" tip="最小化" animate="0" />
+				   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,0" tip="关闭" animate="0"/>
+			</caption>
+								
+			<window  pos="1,[0,-1,-1" colorBkgnd="#D5EBFF" name="Win_UserListChatRegion">
+						<bqlvideo name="UserCamera" pos="0,0,-0,-0" />		
+			</window>
+    </root>
+</SOUI>

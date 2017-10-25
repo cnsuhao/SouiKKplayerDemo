@@ -1,0 +1,17 @@
+<SOUI name="DlgSmiley" title="Smiley" 
+width="300" height="200"  resizable="0"
+appWnd="0" minsize="300,200"
+translucent="1">	
+    <root  skin="_skin.shadow" >
+			 <window  pos="5,3,-5,-5"  colorBkgnd="#FFFFFF" >
+			         <window  pos="5,5,-5,-5" inset="2,2">
+					     <window pos="0,0,@37,@36" inset="2,2" skin="Smiley.Smileyrect">
+						      <imglabel  name="SmileyAstonishment" strdata="\ue057" pos="|-12,|-12,@24,@24" skin="Smiley.Astonishment" tip="惊讶" />
+					     </window>
+						 <window  pos="[-1,0,@37,@36" inset="2,2" skin="Smiley.Smileyrect">
+						      <imglabel  name="SmileyCurlonesLip" pos="|-12,|-12,@24,@24" skin="Smiley.CurlonesLip" tip="撇嘴" />
+					     </window>
+					 </window>
+			 </window>
+	</root>
+</SOUI>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIDEF>
+  <font face="宋体" size="15"/>
+
+  <string>
+    <title value="360"/>
+    <ver value="1.0"/>
+  </string>
+ 
+ <color>
+  <red value="rgb(255,0,0)"/>
+  <green value="rgb(0,255,0)"/>
+  <blue value="rgb(0,0,255)"/>
+  <white value="rgb(255,255,255)"/>
+  <black_light value="#202020"/>
+  <gray value="#808080"/>
+  <warning value="#fb6d74"/>
+  <helper value="#999999" />
+  <text_disable value="#cecece"/>
+  <border value="#d1d1d1"/>
+  <theme value="#4cb9ea"/>
+  <prompt value="#ff9b0d"/> 
+  <text_body value="#333333"/>
+  <text_slave value="#666666"/>
+  <sms_header value="#f5f5f5"/>
+</color>
+<skin>
+        <!--logo区-->
+		
+		<imgframe name="_skin.lOGINEDIT" src="PNG:ID_PNG_lOGINEDIT" />
+		<imgframe name="_skin.KKLOGO20" src="PNG:ID_PNG_KK_LOGO20" />
+		<imgframe name="_skin.KKLOGO30" src="PNG:ID_PNG_LOGO30" />
+		<imgframe name="_skin.KKLOGO32" src="PNG:ID_PNG_KK_LOGO32" />
+		<imgframe name="_skin.KKLOGO48" src="PNG:ID_PNG_KK_LOGO48" />
+		
+		<imgframe name="_skin.USER48" src="PNG:ID_PNG_USER48" />
+		<imgframe name="_skin.USER32" src="PNG:ID_PNG_USER32" />
+		
+		<imglist  name="_skin.USER32_3" src="PNG:ID_PNG_USER32_3" states="3" />
+		<imglist  name="_skin.Btn4" src="PNG:ID_PNG_BTN4" states="4" />
+		<imglist  name="_skin.Win_Close" src="PNG:ID_PNG_WIN_CLOSE" states="3" />
+		<imglist name="_skin.Win_Max" src="PNG:ID_PNG_WIN_MAX" states="3" />
+		<imglist name="_skin.Win_Min" src="PNG:ID_PNG_WIN_MIN" states="3" />
+		<imglist name="_skin.Win_Max2" src="PNG:ID_PNG_WIN_MAX_2" states="3" />
+		<imglist name="_skin.btn_keyboard" src="PNG:ID_PNG_KEYBOARD" states="4"/>
+		<imglist name="_skin.Tab_Icon" src="PNG:ID_PNG_TabIcon" states="3"/>
+		<imglist name="_skin.btn_login" src="PNG:ID_PNG_LOGIN" states="3"/>
+		<imglist name="_skin.Tab_WbIcon" src="PNG:ID_PNG_WbTab" states="4"/>
+		<imglist name="_skin.Tab_Page" src="PNG:ID_PNG_TAB_PAGE" states="4"/>
+		<imglist name="_skin.LGBTN" src="PNG:ID_PNG_LGBTN" states="3"/>
+		<imglist name="_skin.CHART3" src="PNG:ID_PNG_CHART3" states="3"/>
+		<imglist name="_skin.TipCHART3" src="PNG:ID_PNG_TIPCHART3" states="3"/>
+		<imglist name="_skin.Down3" src="PNG:ID_PNG_DOWN3" states="3"/>
+		
+		<imglist name="_skin.USERS3" src="PNG:ID_PNG_USERS" states="3"/>
+		<imglist name="_skin.USER3" src="PNG:ID_PNG_USER3" states="3"/>
+		<imglist name="_skin.SETTING3" src="PNG:ID_PNG_SETTING3" states="3"/>
+		<imglist name="_skin.Audio3" src="PNG:ID_PNG_AUDIO3" states="3"/>
+		<imglist name="_skin.AuMut3" src="PNG:ID_PNG_AU_MUTE3" states="3"/>
+		<imglist  name="_skin.Delete" src="PNG:ID_PNG_Delete"  states="3"/>
+		<imglist  name="_skin.NO" src="PNG:ID_PNG_NO"  states="3"/>
+		<imglist name="_skin.Vol_Block" src="PNG:ID_PNG_VOL_BLOCK" states="3"/>
+		<imglist name="_skin.ROOM3" src="PNG:ID_PNG_ROOM3" states="3"/>
+		<imglist name="_skin.Refresh" src="PNG:ID_PNG_Refresh" states="3"/>
+		<imglist name="_skin.FangDa" src="PNG:ID_PNG_FANG_DA" states="3"/>
+		
+		<imgframe name="_skin.Vol_Mute_Pop" src="PNG:ID_PNG_VOL_MUTE_POP" />
+		<imgframe name="_skin.Vol_Pos" src="PNG:ID_PNG_VOL_POS" />
+		<imgframe name="_skin.SysMsg" src="PNG:ID_PNG_SYSMSG" />
+		<imgframe name="_skin.no_group" src="PNG:ID_PNG_NO_GROUP" />
+		<imgframe name="_skin.lgBk" src="PNG:ID_PNG_LGBK"  />
+		<imgframe name="_skin.shadow" src="PNG:ID_PNG_SHADOW"   left="5" top="3" right="5" bottom="7"/>
+		
+		<imgframe name="_skin.ErrTipBg" src="PNG:ID_PNG_ERRTIPBG"   left="4" top="10" right="4" bottom="4"/>
+		
+		<imgframe name="_skin.Setting" src="PNG:ID_PNG_Setting18" />
+		<imgframe  name="_skin.Presence" src="PNG:ID_PNG_Presence" />
+		<imgframe  name="_skin.Charmain" src="PNG:ID_PNG_Charmain" />
+		<imglist   name="_skin.Role3" src="PNG:ID_PNG_Role3"  states="3" />
+		<imglist   name="_skin.Role4" src="PNG:ID_PNG_Role4"  states="4" />
+		<imglist   name="_skin.DropBtn24" src="PNG:ID_PNG_DROPBTN24"  states="3" />
+		<imgframe  name="_skin.MainLecture" src="PNG:ID_PNG_MainLecture" />
+		<imglist   name="_skin.Microphone2" src="PNG:ID_PNG_Microphone2" states="2" />
+		<imgframe  name="_skin.Microphone" src="PNG:ID_PNG_Microphone" />
+		<imgframe  name="_skin.View16" src="PNG:ID_PNG_View16" />
+		<imgframe  name="_skin.LineBk" src="PNG:ID_PNG_LineBk" />
+		<imgframe  name="_skin.IconInfo" src="PNG:ID_PNG_IconInfo" />
+		<imgframe  name="_skin.Tip" src="PNG:ID_PNG_TIP" />
+		
+		<imgframe  name="_skin.FullScreen" src="PNG:ID_PNG_FullScreen" />
+		<imgframe  name="_skin.LayOutIcon" src="PNG:ID_PNG_LayOut" />
+		<imgframe  name="_skin.FocusBox" src="PNG:ID_PNG_FocusBox" margin-x="1" margin-y="1" />
+	
+		<imglist   name="_skin.CameraVideo3" src="PNG:ID_PNG_CameraVideo3"  states="3" />
+		
+		<imglist   name="_skin.WIFI" src="PNG:ID_PNG_WIFI"  states="2" />
+		<imgframe  name="_skin.VideoLogo" src="PNG:ID_PNG_VideoLogo" />
+		<imgframe  name="_skin.VideoBk"   margin-x="2" margin-y="2" src="PNG:ID_PNG_VideoBk" />
+		<imgframe  name="_skin.VideoBk2"  margin-x="2" margin-y="30" src="PNG:ID_PNG_BK2" />
+		<imgframe  name="_skin.BottomLineX" margin-x="2" margin-y="2" src="PNG:ID_PNG_BoLine" />
+		<imgframe  name="_skin.Vol_Back"  src="PNG:ID_PNG_VOL_BACK" />
+		
+		<imgframe  name="_skin.WWB" src="PNG:ID_PNG_WWB" />
+		<imgframe  name="_skin.WbWait" src="PNG:ID_PNG_WBWAIT" />
+		<imgframe  name="_skin.Add" src="PNG:ID_PNG_Add" />
+		<imgframe  name="Smiley.Smileyrect" src="PNG:ID_PNG_Smileyrect" />
+		
+		<imgframe  name="_skin.shurukuang" src="PNG:ID_PNG_shurukuang" states="2" margin-x="2" margin-y="2"/>
+	    <imgframe  name="_skin.shurukuangBig" src="PNG:ID_PNG_shurukuangBig" states="3" margin-x="2" margin-y="2" />
+	   
+		<gif  name="_skin.Gif_Pross"     src="GIF:ID_Gif_PROSS" />
+		<gif  name="_skin.Gif_Loading"   src="GIF:ID_Gif_Loading" />
+		<gif  name="_skin.Gif_Loading2"   src="GIF:ID_Gif_Loading2" />
+		<gif  name="_skin.Gif_Loading22"   src="GIF:ID_Gif_Loading22" />
+		<!--别嘴-->
+		<gif  name="skin.Gif_Astonishment"   src="GIF:ID_Gif_astonishment" />
+		
+		<imgframe name="skin.VideoTiShi" src="PNG:ID_PNG_VideoTiShi" />
+		<imgframe name="skin.ImBgLeft" src="PNG:ID_PNG_IM_BG_LEFT" left="15" top="19" right="15" bottom="19"/>
+		<imgframe name="skin.ImBgRight" src="PNG:ID_PNG_IM_BG_RIGHT" left="15" top="19" right="15" bottom="19"/>
+		<!-----------表情区--------------->
+		<!--惊讶--->
+		<imgframe  name="Smiley.Astonishment" src="PNG:ID_PNG_Smiley_Astonishment" />
+	    <!---撇嘴----->
+	   	<imgframe  name="Smiley.CurlonesLip" src="PNG:ID_PNG_Smiley_CurlonesLip"/>
+		
+		<imglist name="_skin.btn_Smiley" src="PNG:ID_PNG_Smiley" states="3"/>
+	    <imglist name="_skin.btn_A" src="PNG:ID_PNG_A" states="3"/>
+		
+		<imglist name="_skin.btn_4screen" src="PNG:ID_PNG_4screen" states="3"/>
+	    <imglist name="_skin.btn_Standardscreen" src="PNG:ID_PNG_Standardscreen" states="3"/>
+		<imglist name="_skin.btn_RightArrows" src="PNG:ID_PNG_RightArrows" states="3"/>
+		<imglist name="_skin.btn_Ewb" src="PNG:ID_PNG_Ewb" states="3"/>
+</skin>
+<style>
+        <class name="normalbtn" font="" colorText="#385e8b" colorTextDisable="#91a7c0" textMode="0x25" cursor="hand" margin-x="0"/>
+		<class name="cls_edit" ncSkin="_skin.sys.border" margin-x="2" margin-y="2" />
+		<class name="cls_edit2" ncSkin="_skin.shurukuang" margin-x="2" margin-y="2" />
+		<class name="cls_edit3" ncSkin="_skin.shurukuangBig" margin-x="2" margin-y="2" />
+		<class name="cls_Loginedit" ncSkin="_skin.lOGINEDIT" margin-x="5" margin-y="5" />
+</style>
+
+  <objattr>
+  </objattr>
+</UIDEF>

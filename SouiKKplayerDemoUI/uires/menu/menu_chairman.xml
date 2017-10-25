@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menuRoot skin="_skin.shadow"  itemHeight="30" iconPos="4,6" 
+textOffset="12" iconBarWidth="24" maxWidth="150" minWidth="150" 
+translucent="1" margin="5,3,5,3" colorBkgnd="#ff0000"
+font="face:宋体,size:12"
+>
+      <menuItem id="20" >申请成为主席</menuItem>
+	  <menuItem id="21" >放弃主席权限</menuItem>
+	  <menuItem id="22" >锁定会议室</menuItem>
+	  <menuItem id="23" >显示敲门用户</menuItem>
+	  <menuItem id="24" >关闭会议室</menuItem>
+	  <menuItem id="25" >全场静音</menuItem>
+	  <menuItem id="26" >设置会场字幕</menuItem>
+	  <menuItem id="27" >设置会场参数</menuItem>
+	  <menuItem id="28" >允许保存白板</menuItem>
+	  <menuItem id="29" >允许会议录制</menuItem>
+	  <menuItem id="30" >允许文字私聊</menuItem>
+	  <menuItem id="31" >允许文字群聊</menuItem>
+	  <menuItem id="32" >保留主讲视频</menuItem>
+	  <menuItem id="33" >允许文件发送</menuItem>
+</menuRoot>

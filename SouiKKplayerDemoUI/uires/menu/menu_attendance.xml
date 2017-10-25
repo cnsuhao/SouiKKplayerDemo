@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menuRoot skin="_skin.shadow"  itemHeight="30" iconPos="4,6" 
+textOffset="12" iconBarWidth="24" maxWidth="150" minWidth="150"   font="face:宋体,size:12"
+translucent="1" margin="5,3,5,3" colorBkgnd="#ff0000">
+      <menuItem id="80" >申请发言</menuItem>
+	  <menuItem id="81" >放弃发言</menuItem>
+	  <menuItem id="82" >开始视频录制</menuItem>
+	  <menuItem id="83" >停止会议录制</menuItem>
+	  <menuItem id="84" >暂停会议录制</menuItem>
+	  <menuItem id="85" >继续会议录制</menuItem>
+	  <menuItem id="86" >打开录制文件夹</menuItem>
+</menuRoot>

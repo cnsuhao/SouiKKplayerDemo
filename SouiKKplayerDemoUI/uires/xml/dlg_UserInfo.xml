@@ -1,0 +1,37 @@
+<SOUI name="DlgUserInfo" title="会议/个人信息" 
+width="280" height="342"  margin="5,5,5,5"  resizable="0"
+appWnd="0" minsize="280,342"  smallIcon="ICON_LOGO32"  bigIcon="ICON_LOGO48"
+translucent="1"
+>
+ <root skin="_skin.shadow" >
+			<caption pos="5,3,-5,32" name="AV_Tittle" margin="0,0,0,0" colorBkgnd="#202020" show="1" font="adding:0" >
+			       <window pos="7,4,@20,@20"  skin="_skin.KKLOGO20" name="KKLogoBtn" colorText="#FFFFFF" focusable="0" />
+                   <text pos="[8,5,@100,@20" name="TxtAVTitle" font="宋体" colorText="#ACACAC">个人信息</text>
+				   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,4" tip="关闭" animate="0"/>
+			</caption>
+			<window name="WinWebRes" pos="5,[0,-5,-5" colorBkgnd="#323232" >
+			        <window pos="5,20,-0,-0">
+					        <window pos="0,20,-0,@24">
+									 <text pos="0,0,@70,-0" colorText="#ACACAC" font="face:SimSun,size:12" align="right" >会议号:</text>
+									 <edit name="Edit_RmNumber" colorText="#ACACAC"  inset="5,0,0,0" maxBuf="20" pos="[2,0,@180,-0"  readOnly="1"  class="cls_edit2" />
+							</window>
+							<window pos="0,[5,-0,@24">
+									 <text pos="0,0,@70,-0" align="right" colorText="#ACACAC" font="face:SimSun,size:12" >会议主题:</text>
+									 <edit name="Edit_RmName" colorText="#ACACAC"  inset="5,0,0,0" maxBuf="20" pos="[2,0,@180,-0"  readOnly="1"  class="cls_edit2" />
+							</window>
+							<window pos="0,[5,-0,@68">
+									 <text pos="0,0,@70,@25" align="right" colorText="#ACACAC" font="face:SimSun,size:12" >会议备注:</text>
+									 <edit name="Edit_RmInfo" colorText="#ACACAC"  inset="5,0,0,0" maxBuf="20" pos="[2,0,@180,-0"  readOnly="1"  class="cls_edit3" />
+							</window>
+							<window pos="0,[20,-0,@24">
+									 <text pos="0,0,@70,-0" align="right" colorText="#ACACAC" font="face:SimSun,size:12" >ID:</text>
+									 <edit name="Edit_Acount" colorText="#ACACAC"  inset="5,0,0,0" maxBuf="20" pos="[2,0,@180,-0"  readOnly="1"  class="cls_edit2" />
+							</window>
+							<window pos="0,[5,-0,@24">
+									 <text pos="0,0,@70,-0" align="right" colorText="#ACACAC" font="face:SimSun,size:12" >昵称:</text>
+									 <edit name="Edit_DisplayName" colorText="#ACACAC"  inset="5,0,0,0" maxBuf="20" pos="[2,0,@180,-0" readOnly="1" maxBuf="20" class="cls_edit2" />
+							</window>
+					</window>
+			</window>
+	</root>
+</SOUI>

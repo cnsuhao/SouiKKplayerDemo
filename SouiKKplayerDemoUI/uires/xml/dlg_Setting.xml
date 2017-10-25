@@ -1,0 +1,74 @@
+<SOUI name="DlgUserInfo" title="会议配置信息" 
+width="450" height="500"  margin="5,5,5,5"  resizable="0"
+appWnd="0" minsize="450,500"  smallIcon="ICON_LOGO32"  bigIcon="ICON_LOGO48"
+translucent="1"
+>
+ <root skin="_skin.shadow" >
+			<caption pos="5,3,-5,32" name="AV_Tittle" margin="0,0,0,0" colorBkgnd="#202020" show="1" font="adding:0" >
+			       <window pos="7,4,@20,@20"  skin="_skin.KKLOGO20" name="KKLogoBtn" focusable="0" />
+                   <text pos="[8,5,@100,@20" name="TxtAVTitle" font="宋体" colorText="#ACACAC">配置信息</text>
+				   <imgbtn name="btn_close" skin="_skin.Win_Close"  pos="-30,4" tip="关闭" animate="0"/>
+			</caption>
+			<window name="WinWebRes" pos="5,[0,-5,-5" colorBkgnd="#323232" >
+			        <window pos="5,[20,-0,-0">
+					        <window pos="0,10,-0,@25">
+									 <text  align="right"  pos="0,0,@80,-0" font="face:SimSun,size:12" colorText="#ACACAC">软件版本:</text>
+									 <text name="txt_AppVer" class="cls_edit2" pos="[0,0,@160,-0" 
+											inset="5,0,0,0"  focusable="0" colorText="#ACACAC"
+											curSel="0" id_text="3" font="face:SimSun,size:12">
+								            
+								     </text >
+							</window>
+					        <window pos="0,[10,-0,@25">
+									 <text  align="right" pos="0,0,@80,-0" font="face:SimSun,size:12" colorText="#ACACAC" >视频采集设备:</text>
+									 <comboview name="cbx_VideoDevlist" class="cls_edit2" pos="[0,0,@160,-0" dropDown="1"   dropHeight="200" animateTime="0"
+											btnSkin="_skin.DropBtn24"  inset="5,0,0,0"  focusable="0" colorText="#ACACAC"
+											curSel="0" id_text="3" font="face:SimSun,size:12">
+								            <liststyle class="cls_edit" colorBkgnd="#323232"><!--列表下拉框-->
+													<template itemHeight="25" colorHover="#cccccc" colorSelected="#0000ff">
+													      <text name="StrDevName" font="face:SimSun,size:12" pos="10,9"></text>
+													</template>
+											</liststyle>
+								     </comboview>
+							</window>
+							 <window pos="0,[10,-0,@25">
+									 <text  align="right" pos="0,0,@80,-0" font="face:SimSun,size:12" colorText="#ACACAC" >视频分辨率:</text>
+									 <comboview name="cbx_VideoDPIList" class="cls_edit2" pos="[0,0,@160,-0" dropDown="1"   dropHeight="200" animateTime="0"
+											btnSkin="_skin.DropBtn24"  inset="5,0,0,0"  focusable="0" colorText="#ACACAC"
+											curSel="0" id_text="3" font="face:SimSun,size:12">
+								            <liststyle class="cls_edit" colorBkgnd="#323232"><!--列表下拉框-->
+													<template itemHeight="25" colorHover="#cccccc" colorSelected="#0000ff">
+													      <text name="StrDevName" font="face:SimSun,size:12" pos="10,9"></text>
+													</template>
+											</liststyle>
+								     </comboview>
+							</window>
+							
+							<window pos="0,[10,-0,@25">
+									 <text  align="right" pos="0,0,@80,-0" font="face:SimSun,size:12" colorText="#ACACAC">音频采集设备:</text>
+									 <comboview name="cbx_AudioDevlist" class="cls_edit2" pos="[0,0,@160,-0" dropDown="1"   dropHeight="200" animateTime="0"
+											btnSkin="_skin.DropBtn24"  inset="5,0,0,0"  focusable="0" colorText="#ACACAC"
+											curSel="0" id_text="3" font="face:SimSun,size:12">
+								            <liststyle class="cls_edit"  colorBkgnd="#323232"><!--列表下拉框-->
+													<template itemHeight="25" colorHover="#cccccc" colorSelected="#0000ff">
+													      <text name="StrDevName" font="face:SimSun,size:12" pos="10,9"></text>
+													</template>
+											</liststyle>
+								     </comboview>
+							</window>
+							<text align="right" pos="0,[10,@220,@25" font="face:SimSun,size:12" colorText="#ACACAC">请点击播放测试，试试能不能听到声音:</text>
+							<window pos="0,[10,-0,@25">
+									 <button name="btn_PlayoutTest"  pos="30,0,@100,@25"  animate="0" focusable="0" >播放声音测试</button>
+							</window>
+							
+							<text  visible="0" align="right" pos="0,[10,@90,@25" font="face:SimSun,size:12" colorText="#ACACAC">音频设备设置:</text>
+							<window visible="0" pos="0,[10,-0,@25">
+									 <button name="btn_PlayOutSetting"  pos="30,0,@100,@25"  animate="0" focusable="0" >扬声器设置</button>
+									 <button name="btn_MicSetting"  pos="[30,0,@100,@25"  animate="0" focusable="0" >麦克风设置</button>
+							</window>
+							
+							
+					</window>
+			</window>
+	</root>
+</SOUI>

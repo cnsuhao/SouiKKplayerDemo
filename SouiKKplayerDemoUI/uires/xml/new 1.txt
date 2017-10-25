@@ -1,0 +1,21 @@
+PC端 打包界面nsis插件编写(部分完成)，及配置脚本，聊天加上tip提示，开始准备pc端log
+
+@bql_user02 1111
+2www
+2www
+\ue057呜呜呜呜。
+
+索引服务器
+1.文件索引表
+   FileMd5  FileSize Remark(备注)；
+2.资源表
+   FileMd5(文件Id)  BlockSize(分块大小) SourceType(资源类型)   Remark(备注，字段长度1024，存放资源的url)；
+   
+ 查询文件md5 返回资源表的信息(最大20条)。
+kkv:6ba56c8eaf1dd6c2a7f2abd5729637dc|MP4
+
+//rtsp://admin:admin@192.168.111.101
+pc端，日志记录。推流当遇到网络不好时，自动丢视频帧处理。
+ 
+程序打包插件测试，界面调整，推流模块调整
+http://localhost:8080/
